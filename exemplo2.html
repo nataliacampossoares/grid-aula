@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: lightgray;
+            width: 100vw;
+            height: 100vh;
+
+            display: grid;
+            /*grid-template-columns: repeat(3, 100px);*/
+            /*cria 3 colunas com 100px*/
+            /*grid-template-colums: 1fr 1fr*/
+            /*tem tamanhos iguais: cria duas colunas iguais*/
+            /*grid-template-columns: repeat(auto-fill, 200px);*/
+            /*cria o tanto de colunas de 200 px que couberem*/
+            /*grid-template-rows: 10vh 90vh;*/
+            grid-template: 10vh 90vh / 1fr 2fr;
+            grid-gap: 10px;
+            /*dá um espaço entre as boxes de 10 px*/
+            /*grid-row-gap: 10px;*/
+            grid-column-gap: 20px;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: blue;
+            
+        }
+
+        .box3 {
+            background-color: yellow;
+            
+        }
+
+        .box4 {
+            background-color: green;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
